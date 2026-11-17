@@ -1,0 +1,167 @@
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-tick" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+<symbol id="i-cross" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11l8-7 8 7v8a1 1 0 0 1-1 1h-4v-6h-6v6H5a1 1 0 0 1-1-1z"/></symbol>
+<symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20l4-1L19 8l-3-3L5 16zM14 7l3 3"/></symbol>
+<symbol id="i-mirror" viewBox="0 0 24 24"><ellipse cx="12" cy="10" rx="6" ry="7.5"/><path d="M12 17.5V22M8.5 22h7"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/></symbol>
+<symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></symbol>
+<symbol id="i-vol" viewBox="0 0 24 24"><path d="M4 10v4h3l5 4V6L7 10zM16 9a4 4 0 0 1 0 6"/></symbol>
+<symbol id="i-mute" viewBox="0 0 24 24"><path d="M4 10v4h3l5 4V6L7 10zM16 9.5l5 5M21 9.5l-5 5"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+<symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.5-5.8M20 4v5h-5"/></symbol>
+<symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></symbol>
+<symbol id="i-up" viewBox="0 0 24 24"><path d="M12 20V8M6 13l6-6 6 6M5 4h14"/></symbol>
+<symbol id="logo-tick" viewBox="0 0 30 24"><path d="M3 13.5c2.2 1.4 4.6 4.2 6.4 7.2C13 13 19.6 6 27 2.8"/></symbol>
+</defs></svg>
+<a class="skip" href="#main" data-ru="К содержимому">Мазмұнға өту</a>
+
+<header class="top" id="top">
+ <div class="wrap">
+  <a class="logo" id="logo" href="#home" aria-label="Шәкірт"><svg aria-hidden="true"><use href="#logo-tick"/></svg>Шәкірт</a>
+  <nav class="nav only-site" aria-label="Бөлімдер" data-ru-aria="Разделы">
+   <a href="#how" data-ru="Как работает">Қалай жұмыс істейді</a><a href="#library" data-ru="Ошибки Ерлана">Ерланның қателері</a><a href="#science" data-ru="Наука">Ғылым</a><a href="#faq" data-ru="Вопросы">Сұрақтар</a>
+  </nav>
+  <nav class="tabs only-app" aria-label="Қосымша" data-ru-aria="Приложение">
+   <a href="#dashboard" data-go="dashboard"><svg class="ic"><use href="#i-home"/></svg><span data-ru="Главная">Басты</span></a>
+   <a href="#lesson" data-go="lesson"><svg class="ic"><use href="#i-pen"/></svg><span data-ru="Урок">Сабақ</span></a>
+   <a href="#mirror" data-go="mirror"><svg class="ic"><use href="#i-mirror"/></svg><span data-ru="Зеркало">Айна</span></a>
+  </nav>
+  <span class="grow"></span>
+  <a class="btn sm quiet only-app about" href="#home" data-ru="О проекте">Жоба туралы</a>
+  <div class="lang" role="group" aria-label="Тіл / Язык"><button data-lang="kk" aria-pressed="true">Қаз</button><button data-lang="ru" aria-pressed="false">Рус</button></div>
+  <button class="iconbtn only-app" id="snd" aria-label="Дыбыс" data-ru-aria="Звук"></button>
+  <button class="iconbtn" id="theme" aria-label="Тақырып" data-ru-aria="Тема"></button>
+  <a class="btn primary sm open-app only-site" href="#dashboard" data-ru="Открыть приложение">Қосымшаны ашу</a>
+  <button class="iconbtn menu-btn only-site" id="menuBtn" aria-label="Мәзір" data-ru-aria="Меню" aria-expanded="false"><svg class="ic"><use href="#i-menu"/></svg></button>
+ </div>
+</header>
+
+<main id="main">
+<div id="site" class="only-site">
+ <section class="hero" id="home">
+  <div class="wrap hero-grid">
+   <h1 class="d-display hero-h" data-ru="ИИ не даёт ответ.<br>А ты <span class=&quot;u&quot;>исправляешь</span> его.">AI жауап бермейді.<br>Ал сен оны <span class="u">түзетесің</span>.</h1>
+   <div class="nb sheet lifted demo" id="demo"></div>
+   <div class="hero-side">
+    <p class="lead" data-ru="Ерлан — искусственный ученик. Он решает десятичные дроби по неверному правилу. Найди ошибку, поставь на свою уверенность и исправь его правило.">Ерлан — жасанды оқушы. Ол ондық бөлшектерді қате ережемен шығарады. Қатесін тап, сенімділігіңе бәс тік және ережесін түзет.</p>
+    <div class="cta"><a class="btn primary lg" href="#lesson" data-ru="Исправить Ерлана">Ерланды түзету</a><a class="link" href="#how"><span data-ru="Как это работает">Бұл қалай жұмыс істейді</span><svg class="ic"><use href="#i-arrow"/></svg></a></div>
+   </div>
+  </div>
+ </section>
+
+ <section id="problem">
+  <div class="wrap class" id="classFig">
+   <div>
+    <h2 class="d-h2" data-ru="Из 100 пятнадцатилетних в Казахстане 56 не достигают базового уровня по математике">Қазақстандағы 15 жастағы әр 100 оқушының 56-сы математикадан базалық деңгейге жетпейді</h2>
+    <p class="lead" style="margin-top:14px" data-ru="Неверный ответ часто стоит на устойчивом неверном правиле. Отметка «верно / неверно» его не исправляет.">Қате жауаптың артында көбіне тұрақты қате ереже тұрады. «Дұрыс» не «бұрыс» деген белгі оны түзетпейді.</p>
+    <div class="fn" style="margin-top:24px">
+     <p data-ru="<sup>1</sup>OECD, PISA 2025: 44% учащихся Казахстана достигли 2-го уровня по математике (в среднем по OECD — 65%)."><sup>1</sup>OECD, PISA 2025: Қазақстан оқушыларының 44%-ы математикадан 2-деңгейге жетті (OECD орташасы — 65%).</p>
+     <p data-ru="<sup>2</sup>После традиционного курса физики прирост понимания — 0.23 из 1.0 (Hake, 1998, 6 542 студента)."><sup>2</sup>Дәстүрлі физика курсынан кейін ұғымдық өсім — 1.0-ден 0.23 (Hake, 1998, 6 542 студент).</p>
+     <p data-ru="<sup>3</sup>Школьники, готовившиеся с GPT-4 без ограничений, на экзамене без ИИ написали на 17% хуже (Bastani и др., PNAS, 2025)."><sup>3</sup>GPT-4-пен шектеусіз дайындалған оқушылар AI-сыз емтиханда 17%-ға нашар жазды (Bastani т.б., PNAS, 2025).</p>
+    </div>
+   </div>
+   <figure>
+    <div class="row" style="align-items:flex-end;gap:16px;margin-bottom:16px"><span class="bignum">56</span><span class="cap" style="max-width:24ch" data-ru="мест из 100 обведены — столько учеников ниже 2-го уровня">100 орынның 56-сы белгіленген — 2-деңгейден төмен оқушылар</span></div>
+    <div class="seats" id="seats" role="img" aria-label="100 орын, оның 56-сы белгіленген" data-ru-aria="100 мест, 56 из них отмечены"></div>
+   </figure>
+  </div>
+ </section>
+
+ <section id="how">
+  <div class="wrap">
+   <div class="sec-h"><h2 class="d-h1" data-ru="Один раунд — четыре шага">Бір раунд — төрт қадам</h2><p class="lead" data-ru="Три-четыре минуты. Готового ответа нет: думает ученик.">Үш-төрт минут. Дайын жауап жоқ: ойланатын — оқушы.</p></div>
+   <div class="how">
+    <div class="how-steps" id="howSteps"></div>
+    <div class="how-stage" id="howStage" aria-live="polite"></div>
+   </div>
+  </div>
+ </section>
+
+ <section id="versus">
+  <div class="wrap">
+   <div class="sec-h"><h2 class="d-h1" data-ru="Одна задача — два способа учиться">Бір есеп — екі түрлі оқу</h2></div>
+   <div class="spread">
+    <div class="page">
+     <h3 class="d-h3" data-ru="Обычный ИИ-помощник">Кәдімгі AI-көмекші</h3>
+     <div class="bub r"><small data-ru="Ученик">Оқушы</small><span data-ru="Что больше: 0.25 или 0.3?">0.25 пен 0.3 — қайсысы үлкен?</span></div>
+     <div class="bub l ai"><small>AI</small><span data-ru="0.3 больше, потому что 0.3 = 0.30, а 30 &gt; 25.">0.3 үлкен, өйткені 0.3 = 0.30, ал 30 &gt; 25.</span></div>
+     <div class="bub r"><small data-ru="Ученик">Оқушы</small><span data-ru="Понятно, спасибо.">Жарайды, рақмет.</span></div>
+     <p class="who-thinks" data-ru="<b>Кто думал?</b> ИИ. Ученик переписал ответ."><b>Ойланған кім?</b> AI. Оқушы жауапты көшірді.</p>
+    </div>
+    <div class="page">
+     <h3 class="d-h3">Шәкірт</h3>
+     <div class="bub l er"><small>Ерлан</small><span class="ink">0.25 &gt; 0.3</span> <span data-ru="— потому что 25 &gt; 3.">— өйткені 25 &gt; 3.</span></div>
+     <div class="bub r st"><small data-ru="Ученик">Оқушы</small><span data-ru="Неверно! Он сравнивает дробную часть как целое число.">Қате! Ол үтірден кейінгіні бүтін сан сияқты салыстырады.</span></div>
+     <div class="bub r win"><small data-ru="Ученик">Оқушы</small><span data-ru="Новое правило: сравнивать по разрядам. Проверка: 5 из 5.">Жаңа ереже: разрядтап салыстыр. Тексеріс: 5/5.</span></div>
+     <p class="who-thinks" data-ru="<b>Кто думал?</b> Ученик. Списывать было нечего."><b>Ойланған кім?</b> Оқушы. Көшіретін жауап болған жоқ.</p>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <section id="library">
+  <div class="wrap">
+   <div class="sec-h"><h2 class="d-h1" data-ru="Тетрадь ошибок Ерлана">Ерланның қателер дәптері</h2><p class="lead" data-ru="Восемь неверных правил. Каждое — работающий код: открой и посмотри, как Ерлан решает по нему новые задачи.">Сегіз қате ереже. Әрқайсысы — жұмыс істейтін код: ашып, Ерланның сол ережемен жаңа есептерді қалай шығаратынын көр.</p></div>
+   <div class="filters" id="filters" role="group" aria-label="Тақырып" data-ru-aria="Тема"></div>
+   <div class="index" id="index"></div>
+  </div>
+ </section>
+
+ <section id="mirror-info">
+  <div class="wrap cols c75" style="align-items:start;gap:40px">
+   <div class="sec-h" style="margin:0">
+    <h2 class="d-h1" data-ru="Зеркало: пропущенная ошибка показывает твою собственную">Айна: байқамай қалған қатең өз ойыңды көрсетеді</h2>
+    <p class="lead" data-ru="Если уверенно назвать ошибку Ерлана «верной», растёт вероятность, что у тебя то же заблуждение. Система пересчитывает её по формуле Байеса после каждого ответа. Это не диагноз, а оценка.">Ерланның қатесін сеніммен «дұрыс» десең, сенде де сол түсінік бар деген ықтималдық өседі. Жүйе оны әр жауаптан кейін Байес формуласымен қайта есептейді. Бұл диагноз емес, баға.</p>
+    <a class="link" href="#mirror"><span data-ru="Открыть Зеркало">Айнаны ашу</span><svg class="ic"><use href="#i-arrow"/></svg></a>
+   </div>
+   <div class="sheet mirror-prev" id="miPrev"></div>
+  </div>
+ </section>
+
+ <section id="science">
+  <div class="wrap">
+   <div class="sec-h"><h2 class="d-h1" data-ru="На чём основан каждый шаг">Әр қадам неге сүйенеді</h2><p class="lead" data-ru="Средний эффект метода в мета-анализах (Hedges g). Это эффекты отдельных методов, не Шәкірт.">Мета-анализдердегі әдістің орташа әсері (Hedges g). Бұл — жеке әдістердің әсері, Шәкірттің емес.</p></div>
+   <div class="science" id="sci"></div>
+   <p class="caution" data-ru="<b>Чего мы не утверждаем.</b> Эффект самого Шәкірт ещё не измерен. Его покажет только контролируемый эксперимент, в котором классы делятся на группы случайно."><b>Нені айтпаймыз.</b> Шәкірттің өз әсері әлі өлшенген жоқ. Оны сыныптар кездейсоқ бөлінетін бақыланатын эксперимент қана көрсетеді.</p>
+  </div>
+ </section>
+
+ <section id="faq">
+  <div class="wrap">
+   <div class="sec-h"><h2 class="d-h1" data-ru="Частые вопросы">Жиі қойылатын сұрақтар</h2></div>
+   <div class="faq" id="faqList"></div>
+  </div>
+ </section>
+
+ <section style="padding-top:0">
+  <div class="wrap">
+   <div class="sheet margin closing">
+    <h2 class="d-h1" data-ru="Исправь Ерлана сам">Ерланды өзің түзетіп көр</h2>
+    <p class="lead" style="margin:12px 0 22px" data-ru="Первый раунд займёт три-четыре минуты. Регистрация не нужна, данные остаются на этом устройстве.">Бірінші раунд үш-төрт минут алады. Тіркелу керек емес, деректер осы құрылғыда қалады.</p>
+    <a class="btn primary lg" href="#lesson" data-ru="Начать первый раунд">Бірінші раундты бастау</a>
+   </div>
+  </div>
+ </section>
+</div>
+
+<div id="app" class="only-app"><div class="wrap"><div id="screen"></div></div></div>
+</main>
+
+<nav class="dock only-app" aria-label="Қосымша" data-ru-aria="Приложение">
+ <a href="#dashboard" data-go="dashboard"><svg class="ic"><use href="#i-home"/></svg><span data-ru="Главная">Басты</span></a>
+ <a href="#lesson" data-go="lesson"><svg class="ic"><use href="#i-pen"/></svg><span data-ru="Урок">Сабақ</span></a>
+ <a href="#mirror" data-go="mirror"><svg class="ic"><use href="#i-mirror"/></svg><span data-ru="Зеркало">Айна</span></a>
+</nav>
+
+<footer class="only-site">
+ <div class="wrap">
+  <span data-ru="Шәкірт · прототип · 2026. Всё считается в браузере, языковая модель не используется.">Шәкірт · прототип · 2026. Барлық есептеу браузерде, тілдік модель қолданылмайды.</span>
+  <span class="row" style="gap:18px"><a href="https://github.com/yersultan2000/shakirt">GitHub</a><a href="#dashboard" data-ru="Приложение">Қосымша</a></span>
+ </div>
+</footer>
+<div id="menu"></div>
+<div id="modal"></div>
+<div id="toasts" aria-live="polite"></div>
+<p class="sr" id="live" aria-live="polite"></p>
